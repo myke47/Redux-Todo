@@ -12,7 +12,7 @@ class TodoItem extends Component {
         return (
             <li>
                 <input
-                type='text'
+                type='checkbox'
                 onChange={this.toggleComplete.bind(this)} 
                 />
                 {this.props.todo.value}

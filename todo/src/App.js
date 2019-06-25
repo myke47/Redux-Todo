@@ -35,12 +35,14 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <form onSubmit={this.addTodo}>
+        <h1 className='todo-header'>ToDo List</h1>
+        <form className='todo-form' onSubmit={this.addTodo}>
           <input
           onChange={this.updateNewTodo}
-          placeholder='new todo'
+          placeholder='New todo...'
           value={this.state.newTodo}
           />
+          <button type="submit">Add Todo</button>
         </form>
         <TodoList todos={this.props.todos} />
       </div>
